@@ -1,3 +1,6 @@
+/*
+---------------------------------------FONTS PROPERTIES
+*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -147,7 +150,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'sansationregular', 'arial';
+  font-family: 'sansationbold', 'arial';
   color: #433BBC;
 }
 h2 {
@@ -159,4 +162,39 @@ h3 {
 p {
   font-size: 1.6rem;
   line-height: 1.4;
+}
+a {
+  text-decoration: none;
+}
+header {
+  border: 1px red solid;
+  background: #433BBC;
+  margin-top: 10vh;
+  width: 100%;
+  display: flex;
+}
+header nav {
+  font-size: 1.6rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 10rem;
+}
+header nav .mainNav {
+  width: 100%;
+  border: 1px red solid;
+  display: flex;
+  justify-content: space-evenly;
+}
+header nav .registerLogin {
+  width: 20%;
+  border: 1px red solid;
+  display: flex;
+  justify-content: space-evenly;
+}
+.mainNav,
+.registerLogin,
+a {
+  color: #f9f8f8;
+  font-family: 'sansationregular';
 }
