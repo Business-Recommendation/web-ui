@@ -142,6 +142,7 @@ html {
   background-image: url(/img/navbackground.png);
   background-repeat: no-repeat;
   background-color: #ffffff;
+  background-position: fixed;
   background-size: 100%;
 }
 html,
@@ -158,7 +159,7 @@ h5 {
   color: #433BBC;
 }
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 h2 {
   font-size: 3.2rem;
@@ -339,10 +340,6 @@ footer p {
 }
 .endorsement {
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 .top {
   display: flex;
