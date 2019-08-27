@@ -326,6 +326,9 @@ footer p {
     width: 100%;
   }
 }
+.endorsement {
+  margin: 0 auto;
+}
 .buttonGroup {
   display: flex;
   justify-content: space-evenly;
