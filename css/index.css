@@ -162,6 +162,9 @@ h2 {
 h3 {
   font-size: 2.8rem;
 }
+h4 {
+  font-size: 2rem;
+}
 p {
   font-size: 1.6rem;
   line-height: 1.4;
@@ -170,7 +173,7 @@ a {
   text-decoration: none;
 }
 header {
-  margin-top: -90rem;
+  margin-top: -60rem;
   width: 100%;
   display: flex;
 }
@@ -203,6 +206,9 @@ a {
 .navbackground {
   width: 100%;
 }
+footer {
+  background: #2f2f2f;
+}
 .pitchDescription {
   display: flex;
   align-items: center;
@@ -210,8 +216,36 @@ a {
 .landingpage {
   width: 100%;
 }
+.buttonGroup button {
+  border: 3px solid #758E4F;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding: 1rem;
+  margin-top: 5rem;
+}
+.buttonGroup button h4 {
+  color: #758E4F;
+}
 .button-text-group-header-landing {
   display: flex;
   flex-direction: column;
-  padding-bottom: 10rem;
+  padding: 5rem 3rem 10rem 3rem;
+  background: #ffffff;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.56066176) 0%, #cdd3ce 25%, #cdd3ce 75%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 0px 20px;
+}
+.button-text-group-header-landing h1 {
+  color: #2f2f2f;
+}
+.contentblock {
+  width: 45%;
+  margin-bottom: 5rem;
+}
+.solutionExplaination {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.sharedWidthSectionInDesktop {
+  display: flex;
 }
