@@ -168,27 +168,27 @@ a {
 }
 header {
   border: 1px red solid;
-  background: #433BBC;
-  margin-top: 10vh;
+  margin-top: -105rem;
   width: 100%;
   display: flex;
+}
+header .nav-logo {
+  width: 100%;
 }
 header nav {
   font-size: 1.6rem;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
-  margin-left: 10rem;
+  justify-content: space-between;
+  align-items: center;
 }
 header nav .mainNav {
   width: 100%;
-  border: 1px red solid;
   display: flex;
   justify-content: space-evenly;
 }
 header nav .registerLogin {
-  width: 20%;
-  border: 1px red solid;
+  width: 30%;
   display: flex;
   justify-content: space-evenly;
 }
