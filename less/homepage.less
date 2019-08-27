@@ -10,6 +10,7 @@
 }
 .button-text-group-header-landing{
     display: flex;
+    max-width: 50rem;
     flex-direction: column;
     padding: 10rem 3rem 10rem 3rem;
     margin-bottom: 5rem;
@@ -18,6 +19,9 @@
     border-radius: 0px 20px;
     h1{
         color:@base-secondary-dark;
+    }
+    @media @tablet{
+       margin: 0 auto;
     }
 }
 
@@ -73,4 +77,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+}
+.lambdalogo{
+    margin-top: 3rem;
+    max-height: 150px;
+    max-width:300px;
+    border-radius: 10px;
+    width: 100%;
 }
