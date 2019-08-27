@@ -197,9 +197,9 @@ header nav .registerLogin {
   display: flex;
   justify-content: space-evenly;
 }
-.mainNav,
-.registerLogin,
-a {
+header .mainNav,
+header .registerLogin,
+header a {
   color: #f9f8f8;
   font-family: 'sansationregular';
 }
@@ -207,7 +207,20 @@ a {
   width: 100%;
 }
 footer {
-  background: #2f2f2f;
+  height: 5rem;
+  background: #433BBC;
+  display: flex;
+  align-items: center;
+}
+footer a {
+  color: #f9f8f8;
+  font-family: 'sansationregular';
+  margin-right: 2rem;
+}
+footer p {
+  width: 75%;
+  color: #f9f8f8;
+  padding-left: 1rem;
 }
 .pitchDescription {
   display: flex;
@@ -228,20 +241,6 @@ footer {
 .button-text-group-header-landing h1 {
   color: #2f2f2f;
 }
-.button-text-group-header-landing .buttonGroup {
-  display: flex;
-  justify-content: space-evenly;
-}
-.button-text-group-header-landing .buttonGroup button {
-  padding: 1rem;
-  margin-top: 5rem;
-  background: #9FD356;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-  border-radius: 0px 10px;
-}
-.button-text-group-header-landing .buttonGroup button h4 {
-  color: #f9f8f8;
-}
 .contentblock {
   width: 45%;
   margin-bottom: 5rem;
@@ -252,4 +251,18 @@ footer {
 }
 .sharedWidthSectionInDesktop {
   display: flex;
+}
+.buttonGroup {
+  display: flex;
+  justify-content: space-evenly;
+}
+.buttonGroup button {
+  padding: 1rem;
+  margin-top: 5rem;
+  background: #9FD356;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 0px 10px;
+}
+.buttonGroup button h4 {
+  color: #f9f8f8;
 }
