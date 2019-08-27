@@ -139,14 +139,16 @@ table {
 }
 html {
   font-size: 62.5%;
+  background-image: url(/img/navbackground.png);
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-position: fixed;
+  background-repeat: repeat-x;
 }
 html,
 body {
   font-family: 'Montserrat', 'arial';
   color: #2f2f2f;
-  background-image: url(/img/navbackground.png);
-  background-repeat: no-repeat;
-  background-color: #ffffff;
 }
 h1,
 h2,
