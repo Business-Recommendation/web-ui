@@ -331,6 +331,23 @@ footer p {
 .endorsement {
   margin: 0 auto;
 }
+.top {
+  display: flex;
+  margin: 20px auto;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  width: 90%;
+  color: #f9f8f8;
+}
+.team-member {
+  display: flex;
+  justify-content: space-between;
+}
+.team-member img {
+  width: 300px;
+  height: auto;
+}
 .buttonGroup {
   display: flex;
   justify-content: space-evenly;
