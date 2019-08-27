@@ -32,6 +32,7 @@
     @media @phone{
         flex-direction: column-reverse;
         margin: 0 auto;
+        align-items: center;
       }
 
 }
@@ -42,10 +43,23 @@
 
 } 
 
-.sharedWidthSectionInDesktop, .fullElevatorPitch, .finalCallToAction{
+.fullElevatorPitch, .finalCallToAction{
     display:flex;
     @media @phone{
         flex-direction: column;
         margin: 0 auto;
+        align-items: center;
+      }
+}
+
+.sharedWidthSectionInDesktop, .mainFeatures, .specs{
+    @media @tablet{
+        margin-right: 10%;
+        margin-left: 10%;
+        flex-direction: column;
+        .contentblock{
+            width:100%;
+        }
+  
       }
 }

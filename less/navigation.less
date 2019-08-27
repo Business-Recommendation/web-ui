@@ -4,6 +4,7 @@ header{
     display: flex;
     @media @tablet{
         flex-direction: column;
+        margin-bottom: -5rem;
       }
     .nav-logo{
         width:100%;
@@ -14,22 +15,40 @@ header{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        @media @phone{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
 
 
         .mainNav{
             width: 100%;
             display: flex;
             justify-content: space-evenly;
+            @media @phone{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+              }
         }
         .registerLogin{
             width: 30%;
             display: flex;
             justify-content: space-evenly;
+            @media @phone{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+              }
         }
     }
     .mainNav, .registerLogin, a {
         color:@acccent-secondary-light;
         font-family: @nav-font;
+        @media @phone{
+            padding-bottom: 1rem;
+          }
     }
 }
 
