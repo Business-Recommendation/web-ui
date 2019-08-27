@@ -153,6 +153,9 @@ h5 {
   font-family: 'sansationbold', 'arial';
   color: #433BBC;
 }
+h1 {
+  font-size: 5rem;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -197,4 +200,15 @@ header nav .registerLogin {
 a {
   color: #f9f8f8;
   font-family: 'sansationregular';
+}
+.pitchDescription {
+  display: flex;
+  align-items: center;
+}
+.landingpage {
+  width: 100%;
+}
+.button-text-group-header-landing {
+  display: flex;
+  flex-direction: column;
 }
