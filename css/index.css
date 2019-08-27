@@ -133,14 +133,14 @@ table {
   max-width: 1080px;
   width: 100%;
   margin: 0 auto;
-  background: red;
+  border: 1px red solid;
 }
 html {
   font-size: 62.5%;
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'sansation', 'san serif';
   color: #000;
 }
 h1,
@@ -148,7 +148,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Sansation', sans-serif;
+  font-family: 'Sansation', 'san serif';
   color: #000;
 }
 h2 {
