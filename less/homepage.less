@@ -4,6 +4,9 @@
 }
 .landingpage{
     width:100%;
+    @media @tablet{
+    display:none;
+    }
 }
 .button-text-group-header-landing{
     display: flex;
@@ -19,14 +22,48 @@
 }
 
 .contentblock{
-    width: 45%;
+    width: 70%;
     margin-bottom: 5rem;
+    padding-left: 1rem;
+
 }
 .solutionExplaination{
     display: flex;
-    flex-direction: row-reverse;
-}
-.sharedWidthSectionInDesktop{
+    @media @phone{
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        align-items: center;
+      }
 
-    display: flex;
+}
+
+
+.blockimages{
+    width: 45%;
+
+} 
+
+.fullElevatorPitch, .finalCallToAction{
+    display:flex;
+    @media @phone{
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+      }
+}
+
+.sharedWidthSectionInDesktop, .mainFeatures, .specs{
+    @media @tablet{
+        margin-right: 10%;
+        margin-left: 10%;
+        flex-direction: column;
+        .contentblock{
+            width:100%;
+        }
+  
+      }
+}
+
+.endorsement{
+    margin: 0 auto;
 }
