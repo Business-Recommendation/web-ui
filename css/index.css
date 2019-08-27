@@ -170,8 +170,7 @@ a {
   text-decoration: none;
 }
 header {
-  border: 1px red solid;
-  margin-top: -105rem;
+  margin-top: -90rem;
   width: 100%;
   display: flex;
 }
@@ -201,6 +200,9 @@ a {
   color: #f9f8f8;
   font-family: 'sansationregular';
 }
+.navbackground {
+  width: 100%;
+}
 .pitchDescription {
   display: flex;
   align-items: center;
@@ -211,4 +213,5 @@ a {
 .button-text-group-header-landing {
   display: flex;
   flex-direction: column;
+  padding-bottom: 10rem;
 }
