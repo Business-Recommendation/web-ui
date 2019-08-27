@@ -179,6 +179,11 @@ header {
   width: 100%;
   display: flex;
 }
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+  }
+}
 header .nav-logo {
   width: 100%;
 }
@@ -186,7 +191,7 @@ header nav {
   font-size: 1.6rem;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 header nav .mainNav {
@@ -231,6 +236,11 @@ footer p {
 .landingpage {
   width: 100%;
 }
+@media (max-width: 800px) {
+  .landingpage {
+    display: none;
+  }
+}
 .button-text-group-header-landing {
   display: flex;
   flex-direction: column;
@@ -244,12 +254,18 @@ footer p {
   color: #2f2f2f;
 }
 .contentblock {
-  width: 50%;
+  width: 70%;
   margin-bottom: 5rem;
-  padding-left: 3rem;
+  padding-left: 1rem;
 }
 .solutionExplaination {
   display: flex;
+}
+@media (max-width: 500px) {
+  .solutionExplaination {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+  }
 }
 .blockimages {
   width: 45%;
@@ -258,6 +274,14 @@ footer p {
 .fullElevatorPitch,
 .finalCallToAction {
   display: flex;
+}
+@media (max-width: 500px) {
+  .sharedWidthSectionInDesktop,
+  .fullElevatorPitch,
+  .finalCallToAction {
+    flex-direction: column;
+    margin: 0 auto;
+  }
 }
 .buttonGroup {
   display: flex;

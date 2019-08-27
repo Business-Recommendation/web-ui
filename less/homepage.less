@@ -4,6 +4,9 @@
 }
 .landingpage{
     width:100%;
+    @media @tablet{
+    display:none;
+    }
 }
 .button-text-group-header-landing{
     display: flex;
@@ -19,14 +22,17 @@
 }
 
 .contentblock{
-    width: 50%;
+    width: 70%;
     margin-bottom: 5rem;
-    padding-left: 3rem;
+    padding-left: 1rem;
 
 }
 .solutionExplaination{
     display: flex;
-
+    @media @phone{
+        flex-direction: column-reverse;
+        margin: 0 auto;
+      }
 
 }
 
@@ -38,4 +44,8 @@
 
 .sharedWidthSectionInDesktop, .fullElevatorPitch, .finalCallToAction{
     display:flex;
+    @media @phone{
+        flex-direction: column;
+        margin: 0 auto;
+      }
 }
