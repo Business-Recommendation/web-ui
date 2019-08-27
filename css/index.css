@@ -145,6 +145,11 @@ html {
   background-position: fixed;
   background-size: 100%;
 }
+@media (max-width: 800px) {
+  html {
+    background-size: 100% 15%;
+  }
+}
 html,
 body {
   font-family: 'Montserrat', 'arial';
@@ -184,7 +189,7 @@ header {
 @media (max-width: 800px) {
   header {
     flex-direction: column;
-    margin-bottom: -5rem;
+    margin-bottom: -1rem;
   }
 }
 header .nav-logo {
