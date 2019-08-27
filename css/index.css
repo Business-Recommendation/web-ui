@@ -344,6 +344,54 @@ footer p {
   align-items: center;
   justify-content: center;
 }
+.top {
+  display: flex;
+  margin: 20px auto;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  color: #f9f8f8;
+  border-bottom: 2px solid black;
+}
+.top p {
+  font-size: 2rem;
+  padding-bottom: 30px;
+  line-height: 1.5em;
+}
+.team-member {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 80%;
+  height: auto;
+  padding: 20px 0;
+}
+.team-member .bioPhotoLeft img {
+  width: 300px;
+  height: auto;
+  padding-right: 30px;
+}
+.team-member .bioTextRight {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+.team-member .bioTextRight h2 {
+  padding-bottom: 10px;
+}
+.team-member .bioPhotoRight img {
+  width: 300px;
+  height: auto;
+  padding-left: 30px;
+}
+.team-member .bioTextLeft {
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
+}
+.team-member .bioTextLeft h2 {
+  padding-bottom: 10px;
+}
 .buttonGroup {
   display: flex;
   justify-content: space-evenly;
