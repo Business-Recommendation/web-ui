@@ -22,9 +22,12 @@
 }
 
 .contentblock{
-    width: 70%;
+    width: 50%;
     margin-bottom: 5rem;
     padding-left: 1rem;
+    @media @tablet{
+        width: 70%;
+    }
 
 }
 .solutionExplaination{
@@ -53,10 +56,12 @@
 }
 
 .sharedWidthSectionInDesktop, .mainFeatures, .specs{
+    display:flex;
+    justify-content: center;
+
     @media @tablet{
-        margin-right: 10%;
-        margin-left: 10%;
         flex-direction: column;
+        margin: 0 auto;
         .contentblock{
             width:100%;
         }
@@ -66,4 +71,9 @@
 
 .endorsement{
     margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
