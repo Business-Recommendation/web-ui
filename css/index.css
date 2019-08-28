@@ -4,14 +4,6 @@
 /*
 ---------------------------------------FONTS PROPERTIES
 */
-/*
-.descriptiveName(){
-    display: flex;
-    justify-content: Center;
-}
-called like:
-descriptiveName();
-*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -261,6 +253,7 @@ header .registerLogin,
 header a {
   color: #f9f8f8;
   font-family: 'sansationregular';
+  text-shadow: 1px 1px #000000;
 }
 @media (max-width: 600px) {
   header .mainNav,
@@ -435,14 +428,16 @@ footer p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 900px;
+  justify-content: center;
 }
 .productContentContainer .swipeAppImg {
-  width: 35%;
+  width: 50%;
+  padding-bottom: 1rem;
 }
 .productContentContainer .swiper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 10rem;
 }
 .buttonGroup {
