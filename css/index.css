@@ -419,7 +419,7 @@ footer p {
   flex-direction: column;
   margin: 10rem;
 }
-.divToKeepNavBarPretty {
+.productContentContainer {
   min-height: 900px;
   display: flex;
   flex-direction: column;
