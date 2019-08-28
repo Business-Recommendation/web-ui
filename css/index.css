@@ -171,6 +171,7 @@ html h5,
 body h5 {
   font-family: 'sansationbold', 'arial';
   color: #433BBC;
+  margin-bottom: 1rem;
 }
 html h1,
 body h1 {
@@ -189,13 +190,23 @@ body h4 {
   font-size: 2rem;
 }
 html p,
-body p {
+body p,
+html li,
+body li {
   font-size: 1.6rem;
   line-height: 1.4;
 }
 html a,
 body a {
   text-decoration: none;
+}
+html ul,
+body ul {
+  list-style-type: circle;
+}
+html li,
+body li {
+  padding-bottom: 0.5rem;
 }
 header {
   width: 100%;
@@ -443,12 +454,6 @@ footer p {
 }
 .team-member .bioTextLeft h2 {
   padding-bottom: 10px;
-}
-.productContentContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 .buttonGroup {
   display: flex;
