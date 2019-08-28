@@ -376,47 +376,15 @@ footer p {
   border-radius: 10px;
   width: 100%;
 }
-.spaceHoldingSwiperContainer {
-  background: #262121;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1.4rem;
-  color: #000;
-  margin: 0;
-  padding: 0;
+.productAppPictures {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
-.spaceHoldingSwiperContainer .swiperContainer {
+.productAppPictures .swiper-container {
+  width: 75%;
+}
+.productAppPictures .swiper-container .swipeimg {
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-.spaceHoldingSwiperContainer .swiperContainer .swiperSlide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 400px;
-  background: #fff;
-}
-.spaceHoldingSwiperContainer .swiperContainer .swiperSlide .imgContainer {
-  width: 100%;
-  height: 300px;
-  overflow: hidden;
-}
-.spaceHoldingSwiperContainer .swiperContainer .swiperSlide .imgContainer .img-container img {
-  width: 100%;
-}
-.spaceHoldingSwiperContainer .swiperContainer .swiperSlide .swiperContainerInfo {
-  font-size: 2rem;
-  padding: 0 20px;
-  text-align: center;
-  font-weight: 600;
-}
-.spaceHoldingSwiperContainer .swiperContainer .swiperSlide .swiperContainerInfo h3 {
-  font-size: 2.3rem;
-}
-.spaceHoldingSwiperContainer .swiperContainer .swiperSlide .swiperContainerInfo span {
-  color: blue;
-  font-size: 1.4rem;
-  font-weight: 600;
 }
 .top {
   display: flex;
