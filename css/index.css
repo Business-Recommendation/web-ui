@@ -412,6 +412,7 @@ footer p {
   align-items: center;
   justify-content: center;
   margin: 20px auto;
+  padding-top: 5rem;
   width: 90%;
   border-bottom: 2px solid black;
   color: #f9f8f8;
@@ -435,6 +436,12 @@ footer p {
   margin-right: 30px;
   border-radius: 10%;
 }
+@media (max-width: 800px) {
+  .team-member .bioPhotoLeft img {
+    margin-left: 30px;
+    margin-bottom: 0.5rem;
+  }
+}
 .team-member .bioTextRight {
   display: flex;
   flex-direction: column;
@@ -443,11 +450,25 @@ footer p {
 .team-member .bioTextRight h2 {
   padding-bottom: 10px;
 }
+@media (max-width: 800px) {
+  .team-member .bioTextRight {
+    margin: 0 auto;
+    padding-bottom: 10px;
+    align-items: center;
+    padding-right: 30px;
+  }
+}
 .team-member .bioPhotoRight img {
   width: 300px;
   height: auto;
   margin-left: 30px;
   border-radius: 10%;
+}
+@media (max-width: 800px) {
+  .team-member .bioPhotoRight img {
+    margin-right: 30px;
+    margin-bottom: 0.5rem;
+  }
 }
 .team-member .bioTextLeft {
   display: flex;
@@ -456,6 +477,30 @@ footer p {
 }
 .team-member .bioTextLeft h2 {
   padding-bottom: 10px;
+}
+@media (max-width: 800px) {
+  .team-member .bioTextLeft {
+    margin: 0 auto;
+    padding-bottom: 10px;
+    align-items: center;
+    padding-left: 30px;
+  }
+}
+@media (max-width: 800px) {
+  .column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 800px) {
+  .column-regular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .buttonGroup {
   display: flex;
