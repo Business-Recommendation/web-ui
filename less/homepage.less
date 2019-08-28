@@ -2,10 +2,9 @@
     display: flex;
     align-items: center;
     .button-text-group-header-landing{
-        display: flex;
-        flex-direction: column;
+        .DisplayFlexColumn();
         margin-bottom: 5rem;
-        max-width: 50rem;
+        width: 75%;
         padding: 10rem 3rem 10rem 3rem;
         border-radius: 0px 20px;
         background: rgb(255,255,255);
@@ -45,9 +44,7 @@
     display: flex;
    
     @media @phone{
-        flex-direction: column-reverse;
-        margin: 0 auto;
-        align-items: center;
+        .homepageSectionMediaQueryFlexAndPositionProperties();
     }
 }
 
@@ -55,9 +52,7 @@
     display:flex;
     
     @media @phone{
-        flex-direction: column;
-        margin: 0 auto;
-        align-items: center;
+        .homepageSectionMediaQueryFlexAndPositionProperties();
     }
 }
 
@@ -74,8 +69,7 @@
     }
 }
 .endorsement{
-    display: flex;
-    flex-direction: column;
+    .DisplayFlexColumn();
     align-items: center;
     margin-top: 3rem;
     margin-bottom: 3rem;
