@@ -1,62 +1,64 @@
 .pitchDescription{
     display: flex;
     align-items: center;
+    .button-text-group-header-landing{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5rem;
+        max-width: 50rem;
+        padding: 10rem 3rem 10rem 3rem;
+        border-radius: 0px 20px;
+        background: rgb(255,255,255);
+        background: linear-gradient(0deg, rgba(255,255,255,0.5606617647058824) 0%, rgba(205,211,206,1) 25%, rgba(205,211,206,1) 75%, rgba(255,255,255,0) 100%);
+        h1{
+            color:@base-secondary-dark;
+        }
+
+        @media @tablet{
+        margin: 0 auto;
+        }
 }
-.landingpage{
-    width:100%;
-    @media @tablet{
-    display:none;
-    }
-}
-.button-text-group-header-landing{
-    display: flex;
-    max-width: 50rem;
-    flex-direction: column;
-    padding: 10rem 3rem 10rem 3rem;
-    margin-bottom: 5rem;
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,0.5606617647058824) 0%, rgba(205,211,206,1) 25%, rgba(205,211,206,1) 75%, rgba(255,255,255,0) 100%);
-    border-radius: 0px 20px;
-    h1{
-        color:@base-secondary-dark;
-    }
-    @media @tablet{
-       margin: 0 auto;
+    .landingpage{
+        width:100%;
+        
+        @media @tablet{
+        display:none;
+        }
     }
 }
 
+.blockimages{
+    width: 45%;
+} 
+
 .contentblock{
-    width: 50%;
     margin-bottom: 5rem;
+    width: 50%;
     padding-left: 1rem;
+   
     @media @tablet{
         width: 70%;
     }
-
 }
+
 .solutionExplaination{
     display: flex;
+   
     @media @phone{
         flex-direction: column-reverse;
         margin: 0 auto;
         align-items: center;
-      }
-
+    }
 }
-
-
-.blockimages{
-    width: 45%;
-
-} 
 
 .fullElevatorPitch, .finalCallToAction{
     display:flex;
+    
     @media @phone{
         flex-direction: column;
         margin: 0 auto;
         align-items: center;
-      }
+    }
 }
 
 .sharedWidthSectionInDesktop, .mainFeatures, .specs{
@@ -69,22 +71,20 @@
         .contentblock{
             width:100%;
         }
-  
-      }
+    }
 }
-
 .endorsement{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 3rem;
     margin-bottom: 3rem;
+    .lambdalogo{
+        margin-top: 3rem;
+        max-height: 150px;
+        max-width:300px;
+        border-radius: 10px;
+        width: 100%;
+    }
 
-}
-.lambdalogo{
-    margin-top: 3rem;
-    max-height: 150px;
-    max-width:300px;
-    border-radius: 10px;
-    width: 100%;
 }

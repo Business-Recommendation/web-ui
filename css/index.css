@@ -1,4 +1,7 @@
 /*
+---------------------------------------Colors
+*/
+/*
 ---------------------------------------FONTS PROPERTIES
 */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -132,18 +135,13 @@ table {
 * {
   box-sizing: border-box;
 }
-.container {
-  max-width: 1080px;
-  width: 100%;
-  margin: 0 auto;
-}
 html {
-  font-size: 62.5%;
   background-image: url(/img/navbackground.png);
   background-repeat: no-repeat;
   background-color: #ffffff;
   background-position: fixed;
   background-size: 100%;
+  font-size: 62.5%;
 }
 @media (max-width: 800px) {
   html {
@@ -155,31 +153,48 @@ body {
   font-family: 'Montserrat', 'arial';
   color: #2f2f2f;
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
+html .container,
+body .container {
+  margin: 0 auto;
+  max-width: 1080px;
+  width: 100%;
+}
+html h1,
+body h1,
+html h2,
+body h2,
+html h3,
+body h3,
+html h4,
+body h4,
+html h5,
+body h5 {
   font-family: 'sansationbold', 'arial';
   color: #433BBC;
 }
-h1 {
+html h1,
+body h1 {
   font-size: 4rem;
 }
-h2 {
+html h2,
+body h2 {
   font-size: 3.2rem;
 }
-h3 {
+html h3,
+body h3 {
   font-size: 2.8rem;
 }
-h4 {
+html h4,
+body h4 {
   font-size: 2rem;
 }
-p {
+html p,
+body p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
-a {
+html a,
+body a {
   text-decoration: none;
 }
 header {
@@ -196,11 +211,11 @@ header .nav-logo {
   width: 100%;
 }
 header nav {
-  font-size: 1.6rem;
-  width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  width: 100%;
+  font-size: 1.6rem;
 }
 @media (max-width: 600px) {
   header nav {
@@ -210,9 +225,9 @@ header nav {
   }
 }
 header nav .mainNav {
-  width: 100%;
   display: flex;
   justify-content: space-evenly;
+  width: 100%;
 }
 @media (max-width: 600px) {
   header nav .mainNav {
@@ -222,9 +237,9 @@ header nav .mainNav {
   }
 }
 header nav .registerLogin {
-  width: 30%;
   display: flex;
   justify-content: space-evenly;
+  width: 30%;
 }
 @media (max-width: 600px) {
   header nav .registerLogin {
@@ -246,58 +261,58 @@ header a {
     padding-bottom: 1rem;
   }
 }
-.navbackground {
-  width: 100%;
-}
 footer {
-  height: 5rem;
-  background: #433BBC;
   display: flex;
   align-items: center;
+  height: 5rem;
+  background: #433BBC;
 }
 footer a {
+  margin-right: 2rem;
   color: #f9f8f8;
   font-family: 'sansationregular';
-  margin-right: 2rem;
 }
 footer p {
   width: 75%;
-  color: #f9f8f8;
   padding-left: 1rem;
+  color: #f9f8f8;
 }
 .pitchDescription {
   display: flex;
   align-items: center;
 }
-.landingpage {
-  width: 100%;
-}
-@media (max-width: 800px) {
-  .landingpage {
-    display: none;
-  }
-}
-.button-text-group-header-landing {
+.pitchDescription .button-text-group-header-landing {
   display: flex;
-  max-width: 50rem;
   flex-direction: column;
-  padding: 10rem 3rem 10rem 3rem;
   margin-bottom: 5rem;
+  max-width: 50rem;
+  padding: 10rem 3rem 10rem 3rem;
+  border-radius: 0px 20px;
   background: #ffffff;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.56066176) 0%, #cdd3ce 25%, #cdd3ce 75%, rgba(255, 255, 255, 0) 100%);
-  border-radius: 0px 20px;
 }
-.button-text-group-header-landing h1 {
+.pitchDescription .button-text-group-header-landing h1 {
   color: #2f2f2f;
 }
 @media (max-width: 800px) {
-  .button-text-group-header-landing {
+  .pitchDescription .button-text-group-header-landing {
     margin: 0 auto;
   }
 }
+.pitchDescription .landingpage {
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .pitchDescription .landingpage {
+    display: none;
+  }
+}
+.blockimages {
+  width: 45%;
+}
 .contentblock {
-  width: 50%;
   margin-bottom: 5rem;
+  width: 50%;
   padding-left: 1rem;
 }
 @media (max-width: 800px) {
@@ -314,9 +329,6 @@ footer p {
     margin: 0 auto;
     align-items: center;
   }
-}
-.blockimages {
-  width: 45%;
 }
 .fullElevatorPitch,
 .finalCallToAction {
@@ -356,7 +368,7 @@ footer p {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-.lambdalogo {
+.endorsement .lambdalogo {
   margin-top: 3rem;
   max-height: 150px;
   max-width: 300px;
@@ -365,16 +377,16 @@ footer p {
 }
 .top {
   display: flex;
-  margin: 20px auto;
   align-items: center;
   justify-content: center;
+  margin: 20px auto;
   width: 90%;
-  color: #f9f8f8;
   border-bottom: 2px solid black;
+  color: #f9f8f8;
 }
 .top p {
-  font-size: 2rem;
   padding-bottom: 30px;
+  font-size: 2rem;
   line-height: 1.5em;
 }
 .team-member {
@@ -411,31 +423,89 @@ footer p {
 .team-member .bioTextLeft h2 {
   padding-bottom: 10px;
 }
-.swipeAppImg {
-  width: 35%;
-}
-.swiper {
-  display: flex;
-  flex-direction: column;
-  margin: 10rem;
-}
 .productContentContainer {
-  min-height: 900px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 900px;
+}
+.productContentContainer .swipeAppImg {
+  width: 35%;
+}
+.productContentContainer .swiper {
+  display: flex;
+  flex-direction: column;
+  margin: 10rem;
 }
 .buttonGroup {
   display: flex;
   justify-content: space-evenly;
 }
 .buttonGroup button {
-  padding: 1rem;
   margin-top: 5rem;
-  background: #9FD356;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 0px 10px;
+  padding: 1rem;
+  background: #9FD356;
 }
 .buttonGroup button h4 {
   color: #f9f8f8;
 }
+/*
+SASS INHERITANCE
+@extend
+@mixin, e.g. clearfix
+GENERATED CONTENT
+content
+POSITION AND LAYOUT
+position
+z-index
+top
+bottom
+left
+right
+Flexbox properties
+float
+clear
+DISPLAY AND VISIBILITY
+display
+opacity
+transform
+CLIPPING
+overflow
+clip
+ANIMATION
+animation
+transition
+BOX MODEL (FROM OUTSIDE IN)
+margin
+box-shadow
+border
+border-radius
+box-sizing
+width
+height
+padding
+BACKGROUND
+background
+cursor
+TYPOGRAPHY
+font-size
+line-height
+font-family
+font-weight
+font-style
+text-align
+text-transform
+word-spacing
+color
+PSEUDO-CLASSES & PSEUDO-ELEMENTS (NESTED RULES)
+:hover
+:focus
+:active
+:before
+:after
+:first-child
+:last-child
+
+*/
