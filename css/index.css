@@ -286,11 +286,10 @@ footer p {
 .pitchDescription {
   display: flex;
   align-items: center;
+  animation-name: fadein;
+  animation-duration: 2s;
 }
 .pitchDescription .button-text-group-header-landing {
-  animation-name: fadein;
-  animation-duration: 5s;
-  transition: ease-in-out;
   display: flex;
   flex-direction: column;
   margin-bottom: 5rem;
@@ -388,6 +387,8 @@ footer p {
 .productAppPictures {
   margin-top: 5rem;
   margin-bottom: 5rem;
+  animation-name: fadein;
+  animation-duration: 2s;
 }
 .productAppPictures .swiper-container {
   width: 75%;
@@ -467,6 +468,14 @@ footer p {
 .buttonGroup button:hover {
   transform: scale(1.05, 1.05);
   background-color: #87c333;
+}
+@keyframes fadein {
+  to {
+    opacity: 1;
+  }
+  from {
+    opacity: 0;
+  }
 }
 /*
 SASS INHERITANCE
