@@ -1,58 +1,60 @@
 header{
-
     width: 100%;
     display: flex;
+
     @media @tablet{
         flex-direction: column;
-        margin-bottom: -5rem;
+        margin-bottom: -1rem;
       }
     .nav-logo{
         width:100%;
     }
     nav{
-        font-size: @nav-link-font-size;
-        width: 100%;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        width: 100%;
+        font-size: @nav-link-font-size;
+
         @media @phone{
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            .navbarItemsMediaQueryFlexProperties();
           }
-
-
         .mainNav{
-            width: 100%;
             display: flex;
             justify-content: space-evenly;
+            width: 100%;
+            
             @media @phone{
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-              }
+                .navbarItemsMediaQueryFlexProperties();
+            }
         }
         .registerLogin{
-            width: 30%;
             display: flex;
             justify-content: space-evenly;
+            width: 30%;
+            
             @media @phone{
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-              }
+                .navbarItemsMediaQueryFlexProperties();
+            }
         }
     }
-    .mainNav, .registerLogin, a {
+        a {
         color:@acccent-secondary-light;
         font-family: @nav-font;
+        text-shadow: 1px 1px #000000;
+        background-image: linear-gradient(@accent-seconday-dark,white);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 3px;
+        transition: background-size .5s;
+        &:hover{
+          background-size: 100% 2px;
+          cursor: pointer;
+        }
+        
+        
         @media @phone{
             padding-bottom: 1rem;
-          }
+        }
     }
-}
-
-
-.navbackground{
-    width:100%;
 }
