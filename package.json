@@ -18,9 +18,11 @@
   },
   "homepage": "https://github.com/Business-Recommendation/web-ui#readme",
   "dependencies": {
+    "hamburgers": "^1.1.3",
     "less": "^3.10.3",
     "less-watch-compiler": "^1.13.0",
     "live-server": "^1.2.1",
+    "slideout": "^1.0.1",
     "swiper": "^4.5.0"
   }
 }
