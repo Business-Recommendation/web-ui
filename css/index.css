@@ -293,6 +293,11 @@ header a:hover {
 .navhamburger a {
   padding-bottom: 5rem;
 }
+@media (min-width: 801px) {
+  .navhamburger {
+    display: none;
+  }
+}
 .headerTabletQuery {
   display: flex;
 }
