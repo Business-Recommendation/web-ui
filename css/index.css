@@ -289,7 +289,7 @@ header a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(67, 59, 188, 0.35);
+  background: #433bbc;
 }
 .navhamburger a {
   padding-bottom: 5rem;
@@ -331,7 +331,6 @@ footer a {
 @media (max-width: 800px) {
   footer a {
     margin-right: 1rem;
-    font-size: 0.75rem;
   }
 }
 footer p {
@@ -612,7 +611,7 @@ body {
   bottom: 0;
   width: 256px;
   min-height: 100vh;
-  z-index: 0;
+  z-index: 1;
   display: none;
 }
 .slideout-menu-left {
@@ -623,9 +622,13 @@ body {
 }
 .slideout-panel {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   will-change: transform;
-  background-color: inherit;
+  background-image: url(/img/navbackground.png);
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-position: fixed;
+  background-size: 100%;
   /* A background-color is required */
   min-height: 100vh;
 }
