@@ -2,15 +2,26 @@ footer{
     display:flex;
     align-items: center;
     height: 5rem;
+    width: 100%;
     background:@accent-seconday-dark;
      a{
         margin-right: 2rem;
         color:@acccent-secondary-light;
         font-family: @nav-font;
+        @media @tablet{
+            margin-right: 1rem;
+            font-size: 0.75rem;
+        }
     }
     p{
         width:75%;
         padding-left: 1rem;
         color:@acccent-secondary-light;
+
+        @media @tablet{
+            width: 20%;
+            font-size: 0.5rem;
+        }
     }
+ 
 }

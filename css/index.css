@@ -320,6 +320,7 @@ footer {
   display: flex;
   align-items: center;
   height: 5rem;
+  width: 100%;
   background: #433bbc;
 }
 footer a {
@@ -327,10 +328,22 @@ footer a {
   color: #f9f8f8;
   font-family: 'sansationregular';
 }
+@media (max-width: 800px) {
+  footer a {
+    margin-right: 1rem;
+    font-size: 0.75rem;
+  }
+}
 footer p {
   width: 75%;
   padding-left: 1rem;
   color: #f9f8f8;
+}
+@media (max-width: 800px) {
+  footer p {
+    width: 20%;
+    font-size: 0.5rem;
+  }
 }
 .pitchDescription {
   display: flex;
