@@ -319,9 +319,17 @@ header a:hover {
 footer {
   display: flex;
   align-items: center;
-  height: 5rem;
+  height: 10rem;
   width: 100%;
+  align-content: center;
   background: #433bbc;
+}
+@media (max-width: 800px) {
+  footer {
+    column-count: 2;
+    display: block;
+    padding: 3px;
+  }
 }
 footer a {
   margin-right: 2rem;
@@ -331,17 +339,23 @@ footer a {
 @media (max-width: 800px) {
   footer a {
     margin-right: 1rem;
+    display: block;
+    padding-left: 3rem;
+    padding-top: 1rem;
   }
 }
 footer p {
   width: 75%;
+  padding-right: 5rem;
   padding-left: 1rem;
   color: #f9f8f8;
 }
 @media (max-width: 800px) {
   footer p {
-    width: 20%;
-    font-size: 0.5rem;
+    font-size: 1rem;
+    display: block;
+    padding-top: 1rem;
+    padding-left: 3rem;
   }
 }
 .pitchDescription {
@@ -437,17 +451,23 @@ footer p {
   padding-bottom: 3rem;
   padding-top: 3rem;
 }
+.sharedWidthSectionInDesktop h3,
+.mainFeatures h3,
+.specs h3 {
+  text-align: center;
+}
 @media (max-width: 800px) {
   .sharedWidthSectionInDesktop,
   .mainFeatures,
   .specs {
     flex-direction: column;
     margin: 0 auto;
+    align-items: center;
   }
   .sharedWidthSectionInDesktop .contentblock,
   .mainFeatures .contentblock,
   .specs .contentblock {
-    width: 100%;
+    width: 80%;
   }
 }
 .endorsement {
@@ -456,7 +476,6 @@ footer p {
   align-items: center;
   margin-top: 5rem;
   margin-bottom: 5rem;
-  box-shadow: 1px 1px #d3d3d3;
   border-radius: 10px;
 }
 .endorsement .lambdalogo {
@@ -466,6 +485,12 @@ footer p {
   border-radius: 10px;
   width: 100%;
   padding-bottom: 2rem;
+}
+.finalCallToAction h3,
+.finalCallToAction .buttonGroup {
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
 }
 .productAppPictures {
   margin-top: 5rem;
@@ -578,6 +603,12 @@ footer p {
   display: flex;
   justify-content: space-evenly;
 }
+@media (max-width: 800px) {
+  .buttonGroup {
+    flex-direction: column;
+    align-content: center;
+  }
+}
 .buttonGroup button {
   margin-top: 5rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
@@ -592,6 +623,11 @@ footer p {
 .buttonGroup button:hover {
   transform: scale(1.05, 1.05);
   background-color: #87c333;
+}
+@media (max-width: 800px) {
+  .buttonGroup button {
+    margin-top: 1rem;
+  }
 }
 @keyframes fadein {
   to {
@@ -631,6 +667,11 @@ body {
   background-size: 100%;
   /* A background-color is required */
   min-height: 100vh;
+}
+@media (min-width: 801px) {
+  .slideout-panel {
+    background: none;
+  }
 }
 .slideout-open,
 .slideout-open body,
