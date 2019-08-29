@@ -1,0 +1,30 @@
+.productContentContainer{
+    display:flex;
+
+    .mainFeatures, .specs{
+        width: 100%;
+    }
+
+    @media @tablet{
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 5rem;
+        padding-right: 5rem; 
+    }
+}
+
+.productFinalCallEndorsement{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    width: 75%;
+    margin: 0 auto;
+    .finalCallToAction{
+        width: 100%;
+    }
+    
+    @media @tablet{
+        flex-direction: column-reverse;
+    }
+
+}

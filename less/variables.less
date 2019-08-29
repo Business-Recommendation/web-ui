@@ -1,6 +1,7 @@
 //----------------------------------------------Media Queries
 @phone: ~"(max-width: 600px)";
 @tablet: ~"(max-width: 800px)";
+@desktop: ~"(min-width: 801px)";
 
 /*
 ---------------------------------------Colors
@@ -8,7 +9,7 @@
 
 //colour palette
 @base-secondary-dark: #2f2f2f;
-@accent-seconday-dark: #433BBC;
+@accent-seconday-dark: rgb(67, 59, 188);
 @base-primary-mid: #9B9ECE;
 @accent-primary-mid: #CDD3cE;
 @base-secondary-light: #acadbc;
@@ -28,7 +29,7 @@
 
 //font colors
 @main-font-color: @base-secondary-dark;
-@header-font-color: @accent-seconday-dark;
+@header-font-color: darken(@base-primary-mid, 25%);
 
 //fontfamily
 @header-font: 'sansationbold';

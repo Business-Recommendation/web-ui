@@ -2,12 +2,11 @@ header{
     width: 100%;
     display: flex;
 
-    @media @tablet{
-        flex-direction: column;
-        margin-bottom: -1rem;
-      }
     .nav-logo{
         width:100%;
+        @media @tablet{
+            display:none;
+        }
     }
     nav{
         display: flex;
@@ -24,8 +23,8 @@ header{
             justify-content: space-evenly;
             width: 100%;
             
-            @media @phone{
-                .navbarItemsMediaQueryFlexProperties();
+            @media @tablet{
+                display:none;
             }
         }
         .registerLogin{
@@ -33,8 +32,8 @@ header{
             justify-content: space-evenly;
             width: 30%;
             
-            @media @phone{
-                .navbarItemsMediaQueryFlexProperties();
+            @media @tablet{
+                display:none;
             }
         }
     }
@@ -56,5 +55,41 @@ header{
         @media @phone{
             padding-bottom: 1rem;
         }
+    }
+}
+
+.aftertablet{
+    display:none;
+
+    @media @tablet{
+        display: contents;
+    }
+}
+.navhamburger{
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(67, 59, 188, 0.35);
+    a{
+        padding-bottom: 5rem;
+    }
+    @media @desktop{
+        display: none;
+    }
+}
+.headerTabletQuery{
+    display: flex;
+
+    @media @desktop{
+        display: none;
+    }
+
+}
+.hamburger{
+
+    @media @desktop{
+        display: none;
     }
 }
