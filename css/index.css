@@ -152,6 +152,7 @@ html,
 body {
   font-family: 'Montserrat', 'arial';
   color: #2f2f2f;
+  width: 100%;
 }
 html .container,
 body .container {
@@ -302,6 +303,9 @@ header a:hover {
   display: flex;
   width: 100%;
 }
+.headerTabletQuery .nav-logo-tablet {
+  width: 75%;
+}
 @media (min-width: 801px) {
   .headerTabletQuery {
     display: none;
@@ -386,7 +390,7 @@ footer p {
 }
 @media (max-width: 600px) {
   .solutionExplaination {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     margin: 0 auto;
   }
