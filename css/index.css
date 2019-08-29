@@ -618,8 +618,7 @@ body {
   display: flex;
 }
 .productContentContainer .mainFeatures,
-.productContentContainer .specs,
-.productContentContainer .finalCallToAction {
+.productContentContainer .specs {
   width: 100%;
 }
 @media (max-width: 800px) {
@@ -628,6 +627,21 @@ body {
     justify-content: center;
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+}
+.productFinalCallEndorsement {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  width: 75%;
+  margin: 0 auto;
+}
+.productFinalCallEndorsement .finalCallToAction {
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .productFinalCallEndorsement {
+    flex-direction: column-reverse;
   }
 }
 /*
