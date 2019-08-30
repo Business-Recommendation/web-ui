@@ -56,11 +56,19 @@ html, body {
     text-decoration: none;
 
   }
-  ul{
-    list-style-type: circle;
-    
 
-  }  
+
+  li{
+    list-style: none;
+ }
+ li:before{
+    content: '';
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    background-image: url('/img/checked-1.svg');
+ }
+
   li{
     padding-bottom: 0.5rem;
   }
