@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link href="font/stylesheet.css" rel='stylesheet'>
         <link href="css/hamburgers.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/swiper.min.css" />
         <link href="css/index.css" rel="stylesheet">
         <title>Better Business</title>
     </head>
@@ -20,7 +21,6 @@
                 <nav id="menu">
                     <div class="navhamburger">
                         <a href="./index.html">Home</a>
-                        <a href="./product.html">Product</a>
                         <a href="./about.html">About Us</a>
                         <a href="https://better-business.netlify.com/register">Register</a>
                         <a href="https://better-business.netlify.com/login">Login</a>   
@@ -29,7 +29,6 @@
                 <nav class="desktopNav">
                     <div class="mainNav">
                         <a href="./index.html">Home</a>
-                        <a href="./product.html">Product</a>
                         <a href="./about.html">About Us</a>
                     </div>
                     <div class="registerLogin">
@@ -53,34 +52,43 @@
                 </div>
 <!----------------------------------Pitch,Description,CalltoAction--------------------------------------> 
                 <section class="pitchDescription">
+                    <div class="productAppPictures">
+                        <!-- Slider main container -->
+                        <div class="swiper-container">
+                            <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide"><img class="swipeimg" src="img/applogin.png"></div>
+                                    <div class="swiper-slide"><img class="swipeimg" src="img/appregister.png"></div>
+                                    <div class="swiper-slide"><img class="swipeimg" src="img/appaddlisting.png"></div>
+                                    <div class="swiper-slide"><img class="swipeimg" src="img/appstats.png"></div>
+                                    <div class="swiper-slide"><img class="swipeimg" src="img/appupdate.png"></div>
+                                    .....
+                                </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
                     <div class="button-text-group-header-landing">
-                        <h1>Biz smarter, not harder</h1>
+                        <div class="textmain"><h1>Biz smarter, not harder</h1>
                         <p class="pitchDescriptionText">
-                            It's hard running and managing a business, let alone running analysis on it! Here at Better Business we can do that for you. 
-                        <br />
-                        <br />
-                        Create A Better Business</p>
+                        It's hard running and managing a business, let alone running analysis on it! Here at Better Business we can do that for you. Create a better business now!
+                        </p></div>
                         <div class="buttonGroup">
                             <a href="https://better-business.netlify.com/register">
                                 <button>
                                     <h4>START NOW</h4>
                                 </button>
                             </a>
-                            <a href="./about.html">
-                                <button>
-                                    <h4>CONTACT SALES</h4>
-                                </button>
-                            </a>
                         </div>
                     </div>
-                    <img class="landingpage" src="./img/landingpageapp.png" alt="">
                 </section>
 <!----------------------------------Longer Elevator Pitch ----------------------------------------------> 
                 <section class="fullElevatorPitch">
                     <div class="contentblock">
                         <h3><img class="icon" src="img/hourglass-3.svg">Save Time</h3>
                         <p>
-                            Better Business is designed to assist you with increasing the profitability of your business. It's simple. Users will review your establishment. Then we'll analyze all the information. Finally, we'll send over the results so that you can start implementing our recommended suggestions to improve your business. It's that easy.
+                          Better Business is designed to assist you with increasing the profitability of your business. It's simple. Users will review your establishment. Then we'll analyze all the information. Finally, we'll send over the results so that you can start implementing our recommended suggestions to improve your business. It's that easy.
                         </p>
                     </div>
                     <img  class="blockimages"  src="./img/businessshop.png" alt='business'>
@@ -93,13 +101,7 @@
                         <p>We run an algorithm that will scour the net for your business on review sites. After the data is analyzed it will give the most commonly used phrases in your reviews so you can see what your customers want more of or less of.</p>
                     <div>
                 </section>
-<!----------------------------------Endorsed by + Partnered with ---------------------------------------> 
-                <section class="endorsement">
-                    <h4>Powered By</h4>
-                    <img  class ="lambdalogo" src="./img/ezgif.com-webp-to-png.png">
-                </section>
-                <section class="sharedWidthSectionInDesktop">
-<!----------------------------------Main Features------------------------------------------------------->
+<!----------------------------------Main Features------------------------------------------------------->                                   <section class="sharedWidthSectionInDesktop">
                     <section class="mainFeatures">
                         <div class="contentblock">
                             <h3>Main Features</h3>
@@ -133,40 +135,208 @@
                         </div>
                     </section>
                 </section>
-<!---------------------------------- Final Call To Action-----------------------------------------------> 
-                <section class=" finalCallToAction">
-                    <div class="contentblock">
-                        <h3>Work With Us</h3>
-                        <div class="buttonGroup">
-                            <a href="https://better-business.netlify.com/register">
-                                <button>
-                                    <h4>START NOW</h4>
-                                </button>
-                            </a>
-                            <a href="./about.html">
-                                <button>
-                                    <h4>CONTACT SALES</h4>
-                                </button>
-                            </a>
+
+                <!-----------------TEAM------------------------>
+<div class="teamsection">
+<h3>Behind The Screens</h3>
+<div class="teamfull">
+
+                <div class="teamPictures">
+                    <h4>Data Science</h4>
+                        <!-- Slider main container -->
+                        <div class="swiper-container">
+                            <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <img class="swipeimg" src="./img/smallprofilepics/crawford.png"">
+                                        <p>
+                                            Crawford Collins
+                                            <br> Project Manager
+
+                                        </p>
+                                        <a href="https://github.com/crawftv"><img class="icon" src="./img/GitHub-Mark-32px.png"></a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                            <img class="swipeimg" src="./img/smallprofilepics/lily.png">
+                                            <p>
+                                                    Lily Su
+    
+                                            </p>
+                                            <a href="https://github.com/LilySu"><img class="icon" src="./img/GitHub-Mark-32px.png"></a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                                <img class="swipeimg" src="./img/smallprofilepics/kevon.png">
+                                                <p>
+                                                        Kevona Webb
+        
+                                                </p>
+                                                <a href="https://github.com/KevWebb"><img class="icon" src="./img/GitHub-Mark-32px.png"></a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                    <img class="swipeimg" src="./img/smallprofilepics/enrique.png">
+                                                    <p>
+                                                            Enrique Collado
+            
+                                                    </p>
+                                                    <a href="https://Github.com/fwenchino "><img class="icon" src="./img/GitHub-Mark-32px.png"></a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                        <img class="swipeimg" src="./img/smallprofilepics/alfredo.png">
+                                                        <p>
+                                                                Alfredo Quintana
+                
+                                                        </p>
+                                                        <a href="https://github.com/alqu7095"><img class="icon" src="./img/GitHub-Mark-32px.png"></a>
+                                                    </div>
+                                </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
-                    <img class="blockimages" src="img/growth.png" alt="businessgrowth">
-                </section>  
+                    <div class="teamPictures">
+                            <h4>Back-End Dev</h4>
+                        <!-- Slider main container -->
+                        <div class="swiper-container">
+                            <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <img class="swipeimg" src="./img/smallprofilepics/anthony.png">
+                                        <p>
+                                            Anthony Piazza
+
+                                        </p>
+                                        <a href="https://github.com/anthonypiazza"><img class="icon" src="./img/GitHub-Mark-32px.png"></a>
+                                    </div>
+                                </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+            
+                    <div class="teamPictures">
+                            <h4>Front-End Dev</h4>
+                        <!-- Slider main container -->
+                        <div class="swiper-container">
+                            <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <img class="swipeimg" src="./img/smallprofilepics/arvin.png">
+                                        <p>
+                                                Arvin Agas
+                                
+
+                                        </p>
+                                        <a href="https://github.com/arvagas"><img class="icon" src="./img/GitHub-Mark-32px.png"></a>
+                                    </div>
+                                        <div class="swiper-slide">
+                                                <img class="swipeimg" src="./img/smallprofilepics/andrew.png">
+                                                <p>
+                                                        Andrew Allen
+                                        
+        
+                                                </p>
+                                                <a href="https://github.com/AndrewA0112"><img class="icon" src="./img/GitHub-Mark-32px.png"></a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                    <img class="swipeimg" src="./img/smallprofilepics/kemberly.png">
+                                                    <p>
+                                                            Kemberly Eliscar
+                                            
+            
+                                                    </p>
+                                                    <a href="https://github.com/Kemberly-Eliscar"><img class="icon" src="./img/GitHub-Mark-32px.png"></a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                        <img class="swipeimg" src="./img/smallprofilepics/obaida.png">
+                                                        <p>
+                                                                Obaida Albaroudi
+                                                
+                
+                                                        </p>
+                                                        <a href="https://github.com/Obaida-Albaroudi"><img class="icon" src="./img/GitHub-Mark-32px.png"></a>
+                                                    </div>
+                                </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="teamPictures">
+                        <h4>UI</h4>
+                        <!-- Slider main container -->
+                        <div class="swiper-container">
+                            <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <img class="swipeimg" src="./img/smallprofilepics/richany.png">
+                                        <p>
+                                            Richany Nguon
+
+                                        </p>
+                                        <a href="https://github.com/richanynguon"><img class="icon" src="./img/GitHub-Mark-32px.png"></a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <img class="swipeimg" src="./img/smallprofilepics/melissa.png">
+                                    <p>
+                                        Melissa Kemp
+
+                                    </p>
+                                    <a href="https://github.com/otterspawdesign"><img class="icon" src="./img/GitHub-Mark-32px.png"></a>
+                                </div>
+                                </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+               
+</div>
+
+</div>
+
+</div>
+
+
+<!---------------------------------- Final Call To Action-----------------------------------------------> 
+<section class=" finalCallToAction">
+        <div class="contentblock">
+            <h3>Seen Enough?</h3>
+            <h4>Create an account or give us a ping.</h4>
+            <div class="buttonGroup">
+                <a href="https://better-business.netlify.com/register">
+                    <button>
+                        <h4>START NOW</h4>
+                    </button>
+                </a>
+                <a href="./about.html">
+                    <button>
+                        <h4>CONTACT SALES</h4>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <img class="blockimages" src="img/growth.png" alt="businessgrowth">
+    </section>  
 <!----------------------------------Footer--------------------------------------------------------------> 
                 <footer>
                     <p>All Rights Reserved ©</p>
                     <a href="./index.html">Home</a>
-                    <a href="./product.html">Product</a>
                     <a href="./about.html">About</a>
                     <a href="https://better-business.netlify.com/register">Register</a>
                     <a href="https://better-business.netlify.com/login">Login</a>   
                     <a href="#">DISCLAIMER</a>
                     <a href="#">TERMS & CONDITIONS</a>
+                    <img  class ="lambdalogo" src="./img/ezgif.com-webp-to-png.png">
+      
                 </footer>
             </main>
         </div>
         <script src="js/hamburgers.js"></script>
         <script src="js/slideout.min.js"></script>
         <script src="js/slideout.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script src="js/swipe.js"></script>
     </body>
 </html>

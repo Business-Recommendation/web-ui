@@ -148,6 +148,9 @@ html {
     background-size: 100% 15%;
   }
 }
+body {
+  background-color: rgba(255, 255, 255, 0.25);
+}
 html,
 body {
   font-family: 'Montserrat', 'arial';
@@ -171,8 +174,7 @@ body h4,
 html h5,
 body h5 {
   font-family: 'sansationbold', 'arial';
-  text-shadow: 1px 1px #d3d3d3;
-  color: #4d519d;
+  color: #00A388;
   margin-bottom: 1rem;
 }
 html h1,
@@ -265,6 +267,7 @@ header a {
   background-repeat: no-repeat;
   background-size: 0% 3px;
   transition: background-size 0.5s;
+  padding-right: 2rem;
 }
 header a:hover {
   background-size: 100% 2px;
@@ -323,10 +326,11 @@ footer {
   width: 100%;
   align-content: center;
   background: #433bbc;
+  padding: 1rem;
 }
 @media (max-width: 800px) {
   footer {
-    column-count: 2;
+    column-count: 3;
     display: block;
     padding: 3px;
   }
@@ -358,42 +362,68 @@ footer p {
     padding-left: 3rem;
   }
 }
+footer .lambdalogo {
+  max-height: 150px;
+  max-width: 200px;
+  border-radius: 10px;
+  width: 50%;
+  margin-top: 2rem;
+}
 .pitchDescription {
   display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
   align-items: center;
   animation-name: fadein;
   animation-duration: 2s;
+  margin-top: 8rem;
+  margin-bottom: 12rem;
+}
+@media (max-width: 800px) {
+  .pitchDescription {
+    flex-direction: column;
+    margin-bottom: 5rem;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+  }
 }
 .pitchDescription .button-text-group-header-landing {
   display: flex;
+  width: 400%;
   flex-direction: column;
-  margin-bottom: 5rem;
-  width: 75%;
-  padding: 10rem 3rem 10rem 3rem;
-  border-radius: 0px 20px;
-  background: #ffffff;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.56066176) 0%, #cdd3ce 25%, #cdd3ce 75%, rgba(255, 255, 255, 0) 100%);
+  justify-content: space-evenly;
+  padding: 0rem 3rem 5rem 3rem;
+}
+.pitchDescription .button-text-group-header-landing .textmain {
+  flex-direction: column;
+  width: 100%;
 }
 .pitchDescription .button-text-group-header-landing h1 {
   color: #2f2f2f;
+  font-size: 3rem;
+}
+.pitchDescription .button-text-group-header-landing p {
+  font-size: 1.5rem;
+}
+.pitchDescription .button-text-group-header-landing button {
+  margin-left: 70%;
+  margin-top: 1.5rem;
+  width: 13rem;
 }
 @media (max-width: 800px) {
   .pitchDescription .button-text-group-header-landing {
-    margin: 0 auto;
-  }
-}
-.pitchDescription .landingpage {
-  width: 100%;
-  max-width: 50rem;
-  margin-left: 1rem;
-}
-@media (max-width: 800px) {
-  .pitchDescription .landingpage {
-    display: none;
+    width: 70%;
+    padding-top: 5rem;
   }
 }
 .blockimages {
-  width: 45%;
+  width: 30%;
+  margin: 3rem;
+  border-radius: 50%;
+}
+@media (max-width: 600px) {
+  .blockimages {
+    width: 50%;
+  }
 }
 .contentblock {
   margin-bottom: 5rem;
@@ -421,16 +451,25 @@ footer p {
     margin: 0 auto;
   }
 }
+.finalCallToAction {
+  margin-top: 5rem;
+}
 .finalCallToAction h3,
 .finalCallToAction .buttonGroup {
   margin: 0 auto;
-  align-items: center;
+  text-align: center;
+  color: #2f2f2f;
+  padding-bottom: 1rem;
+  padding-top: 3rem;
+}
+.finalCallToAction h4 {
   text-align: center;
 }
 .fullElevatorPitch,
 .finalCallToAction {
   display: flex;
-  padding-bottom: 3rem;
+  justify-content: center;
+  padding-bottom: 2rem;
 }
 .fullElevatorPitch .icon,
 .finalCallToAction .icon {
@@ -445,17 +484,35 @@ footer p {
     margin: 0 auto;
   }
 }
+.mainFeatures,
+.specs {
+  box-shadow: 2px 2px #00000018;
+  border-radius: 10px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-right: 3rem;
+  border: 1px solid #ebe8e8;
+  width: 70%;
+}
 .mainFeatures .contentblock,
 .specs .contentblock {
-  width: 80%;
+  margin: 0 auto;
+  width: 70%;
+}
+@media (max-width: 800px) {
+  .mainFeatures,
+  .specs {
+    margin-bottom: 3rem;
+  }
+}
+.sharedWidthSectionInDesktop {
+  padding-top: 4rem;
 }
 .sharedWidthSectionInDesktop,
 .mainFeatures,
 .specs {
   display: flex;
   justify-content: center;
-  padding-bottom: 3rem;
-  padding-top: 3rem;
 }
 .sharedWidthSectionInDesktop h3,
 .mainFeatures h3,
@@ -467,7 +524,6 @@ footer p {
   .mainFeatures,
   .specs {
     flex-direction: column;
-    margin: 0 auto;
     align-items: center;
   }
   .sharedWidthSectionInDesktop .contentblock,
@@ -476,33 +532,57 @@ footer p {
     width: 80%;
   }
 }
-.endorsement {
+.teamfull {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-content: center;
   align-items: center;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  border-radius: 10px;
-}
-.endorsement .lambdalogo {
-  margin-top: 3rem;
-  max-height: 150px;
-  max-width: 300px;
-  border-radius: 10px;
   width: 100%;
-  padding-bottom: 2rem;
+  margin: 0 auto;
+}
+.teamsection {
+  text-align: center;
+  margin-top: 7rem;
+  margin-bottom: 5rem;
 }
 .productAppPictures {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-left: 2rem;
   animation-name: fadein;
   animation-duration: 2s;
 }
 .productAppPictures .swiper-container {
-  width: 75%;
+  width: 80%;
 }
 .productAppPictures .swiper-container .swipeimg {
   width: 100%;
+}
+.teamPictures {
+  margin-left: 2rem;
+  width: 100px;
+  text-align: center;
+  animation-name: fadein;
+  animation-duration: 2s;
+}
+.teamPictures h4 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.teamPictures .swiper-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 5rem;
+}
+.teamPictures .swiper-container p {
+  font-size: 1rem;
+}
+.teamPictures .swiper-container .swipeimg {
+  width: 50%;
+  border-radius: 100%;
 }
 .top {
   display: flex;
@@ -611,15 +691,17 @@ footer p {
   }
 }
 .buttonGroup button {
-  margin-top: 5rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-  border-radius: 0px 10px;
-  padding: 1rem;
+  border-radius: 10px;
+  padding: 0.5rem;
   background: #9FD356;
   cursor: pointer;
 }
 .buttonGroup button h4 {
   color: #f9f8f8;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  font-family: Helvetica, sans-serif;
 }
 .buttonGroup button:hover {
   transform: scale(1.05, 1.05);
@@ -681,36 +763,6 @@ body {
 }
 .slideout-open .slideout-menu {
   display: block;
-}
-.productContentContainer {
-  display: flex;
-}
-.productContentContainer .mainFeatures,
-.productContentContainer .specs {
-  width: 100%;
-}
-@media (max-width: 800px) {
-  .productContentContainer {
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-}
-.productFinalCallEndorsement {
-  display: flex;
-  align-content: center;
-  justify-content: space-between;
-  width: 75%;
-  margin: 0 auto;
-}
-.productFinalCallEndorsement .finalCallToAction {
-  width: 100%;
-}
-@media (max-width: 800px) {
-  .productFinalCallEndorsement {
-    flex-direction: column-reverse;
-  }
 }
 /*
 SASS INHERITANCE
