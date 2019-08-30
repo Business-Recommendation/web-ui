@@ -509,10 +509,11 @@ footer p {
   align-items: center;
   justify-content: center;
   margin: 20px auto;
-  padding-top: 5rem;
   width: 90%;
-  border-bottom: 2px solid black;
-  color: #f9f8f8;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #2f2f2f;
+  padding: 3rem;
+  border-radius: 10px;
 }
 .top p {
   padding-bottom: 30px;
