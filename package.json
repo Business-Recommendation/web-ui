@@ -23,6 +23,6 @@
     "less-watch-compiler": "^1.13.0",
     "live-server": "^1.2.1",
     "slideout": "^1.0.1",
-    "swiper": "^4.5.0"
+    "swiper": "^6.5.1"
   }
 }
